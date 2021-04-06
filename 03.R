@@ -1,6 +1,7 @@
 data()
 
-x=mtcars
+x=data.frame(mtcars)
+head(x)
 nr=nrow(x)
 nc=ncol(x)
 paste("Number of rows in mtcars : ",nr)
@@ -8,12 +9,8 @@ paste("Number of columns in mtcars : ",nc)
 
 auto=0
 man=0
-for(i in 1:nr) {
-  if(x[i,9]==1)
-      man=man+1
-  else
-    auto=auto+1
-}
+for(i in 1:nr)
+  ifelse(x[i,9]==1,man<-man+1,auto<-auto+1)
 paste("No. of Automatic Cars : ",auto)
 paste("No. of Manual Cars : ",man)
 
