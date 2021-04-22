@@ -23,4 +23,5 @@ x[,8]=as.integer(x[,8])
 x[,9]=as.integer(x[,9])
 newmtc<-x
 
-newmtc[,2]<=5
+print("Cars with no. of cylinders less than 5 : ")
+newmtc[newmtc$cyl<=5,]
