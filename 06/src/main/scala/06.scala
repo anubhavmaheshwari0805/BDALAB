@@ -5,8 +5,9 @@ object MinMax {
         return (minimum,maximum)
     }
     def main(args: Array[String]) : Unit = {
-        var arr=Array(3,4,6,2,7,9,8,90,34,-34)
+        var arr = (for(i <- 1 to 10) yield scala.util.Random.nextInt(100)).toArray
         val (min,max)=minmax(arr)
+        println("Array : "+arr.mkString(" "))
         println("Minimum = "+min+"\nMaximum = "+max)
     }
 }
