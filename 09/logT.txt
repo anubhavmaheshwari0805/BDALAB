@@ -1,0 +1,38 @@
+main.cpp: In function ‘HashTable* initializeTable(int)’:
+main.cpp:175:40: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+             htable->table[i].element = NULL;
+                                        ^~~~
+main.cpp:176:40: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+             htable->table[i].element = NULL;
+                                        ^~~~
+main.cpp:177:40: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+             htable->table[i].element = NULL;
+                                        ^~~~
+main.cpp:178:40: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+             htable->table[i].element = NULL;
+                                        ^~~~
+main.cpp:179:40: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+             htable->table[i].element = NULL;
+                                        ^~~~
+main.cpp:180:40: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+             htable->table[i].element = NULL;
+                                        ^~~~
+main.cpp:181:40: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+             htable->table[i].element = NULL;
+                                        ^~~~
+main.cpp:182:40: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+             htable->table[i].element = NULL;
+                                        ^~~~
+main.cpp:183:40: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+             htable->table[i].element = NULL;
+                                        ^~~~
+main.cpp:184:40: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+             htable->table[i].element = NULL;
+                                        ^~~~
+main.cpp: In function ‘int main()’:
+main.cpp:413:6: error: redeclaration of ‘int t1’
+  int t1 = 2;
+      ^~
+main.cpp:412:6: note: ‘int t1’ previously declared here
+  int t1 = 0;
+      ^~
