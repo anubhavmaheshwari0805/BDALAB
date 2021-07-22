@@ -42,8 +42,16 @@
 ## Part B
 
 ### Implement the following exercises using Spark
+		For running the program :
+		. Go to dir where src dir is child dir.
+		. Check your dependencies in build.sbt file
+		. open terminal
+		. sbt package
+		. sbt compile
+		. sbt run
 9.	WordCount: Here the goal is to count how many times each word appears in a file and write out a list ofwords whose count is strictly greater than 4.
   Use the file log.txt accompanying this assignment to count the words.Save the wordcounts in text form in the "wordcountsDir" using the saveAsTextFile RDD method.Examine the contents ofthe above directory, andthe contents ofthe files ofthe directory.
+		Note:  Output is stored in wordsdir directory. (Delete this dir before running the pgm, otherwise error comes)
 10.	Tweet Mining: A dataset with the 8198 reduced tweets, reduced-tweets.json will be provided.The data contains reduced tweets as in the sample below:
 {"id":"572692378957430785",
 "user":"Srkian_nishu :)",
@@ -51,10 +59,11 @@
 "place":"Orissa",
 "country":"India"}
 A function to parse the tweets into an RDD will be provided. The task is to print the top 10 tweeters.
-
+		Note: Spark-shell version of the same pgm is stored in 10/10-shell.scala file and output ss is 10.png.
 ## Self Demonstartion of the below programs
 1.	IPLTossWinStats: You will be provided with a dataset from the Indian Premier League containing the following files:
   Ball_by_Ball.csv, Match.csv, Player.csv, Player_Match.csv, Season.csv, Team.csv.
   We want to find the percentage of game wins by teams which win the toss.Solets say N games have been played. Let us say there are M games where the team which has won the toss has also won the game. So we are looking for the percentage (M * 100 / N).Perform the task using SQL code only.
+		Note: Spark-shell version of the same pgm is stored in IPL/ipl-shell.scala file and output is ipl.png.
 2.	Streaming Rainfall Averages: Consider the scenario that there are three weather stations in Bangalore which report the rainfall at the respective locations once every 15 minutes. You have to write a Spark Streaming application which will gather the rainfall data from the three stations and print the average rainfall, also once every 15 minutes.
   You will be provided with a scala program, generate Events, which can simulate generation of the rainfall data from the three stations in JSON format  as shown below to a folder:{"Creation_Time": 1.53633593969400013E18,"Station":  "Bengaluru-1","Rainfall": 100.0} Write a Spark streaming application which reads the files written to the above folder and updates the average rainfall value every 15 minutes and prints the averages to the console.
